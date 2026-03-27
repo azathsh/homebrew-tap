@@ -13,7 +13,7 @@ class Azath < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/azathsh/azath/releases/download/v0.4.0/azath_0.4.0_darwin_amd64.tar.gz"
-      sha256 "3f8b30d0a502e98275d66bf6355d4dafde2a0df2ff92cc49ba2e067546d01a05"
+      sha256 "c6a7460ed6e1a9ed412d49469eed00239c8e84f0c0697ffa1bb188d10ce9e7dc"
 
       define_method(:install) do
         bin.install "azath"
@@ -21,7 +21,7 @@ class Azath < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/azathsh/azath/releases/download/v0.4.0/azath_0.4.0_darwin_arm64.tar.gz"
-      sha256 "0d0c41e8c0da5fdf038e4c90055915dff0e05c2213ceafc53260b2a19b1939a8"
+      sha256 "6b6ee9a80f62e4fe7b6f4d05c12ba850165b1590b24f92150d85afa772a37a85"
 
       define_method(:install) do
         bin.install "azath"
@@ -32,14 +32,14 @@ class Azath < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/azathsh/azath/releases/download/v0.4.0/azath_0.4.0_linux_amd64.tar.gz"
-      sha256 "c09afa8c347846ea49a07692cb1d7d378f6322528af1e039f6e466cb3e226f5f"
+      sha256 "333620fcab6824127f120b48f7e47206244072a3b29ae6efa242c2eb846e1f71"
       define_method(:install) do
         bin.install "azath"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/azathsh/azath/releases/download/v0.4.0/azath_0.4.0_linux_arm64.tar.gz"
-      sha256 "f4bf17cef69daf21830ed8f8d081adeece4ad42a6e389122db6341e274e0bca4"
+      sha256 "8aeb50b11a1d9d3ad8d6624a3c47f848430ce68cc417d17f81c805bb4cd79b87"
       define_method(:install) do
         bin.install "azath"
       end
