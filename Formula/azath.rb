@@ -12,16 +12,16 @@ class Azath < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/azathsh/azath/releases/download/v0.4.4/azath_0.4.3_darwin_amd64.tar.gz"
-      sha256 "1c800abeedb4bf97ca1a5f49b6cd2ab003c6ac336db370aa63b831af98c5129e"
+      url "https://github.com/azathsh/azath/releases/download/v0.4.4/azath_0.4.4_darwin_amd64.tar.gz"
+      sha256 "8d23cc2f2f8104a351a3dcb034ba43baf57d07c4af981f39f26aee9af9751892"
 
       define_method(:install) do
         bin.install "azath"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/azathsh/azath/releases/download/v0.4.4/azath_0.4.3_darwin_arm64.tar.gz"
-      sha256 "d072158904221bc8459b85d85683d0a7afdf8b503fad68bc26660bd7295a84f0"
+      url "https://github.com/azathsh/azath/releases/download/v0.4.4/azath_0.4.4_darwin_arm64.tar.gz"
+      sha256 "fc865fa468610d05ae32ede53763972fc08f9fdfabb9aa4421c698182a6b28c5"
 
       define_method(:install) do
         bin.install "azath"
@@ -31,15 +31,15 @@ class Azath < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/azathsh/azath/releases/download/v0.4.4/azath_0.4.3_linux_amd64.tar.gz"
-      sha256 "b1185f1d4b3f7de86aa4f3d5f518a1e0c1481bda479370e6724f2d8354d8dde3"
+      url "https://github.com/azathsh/azath/releases/download/v0.4.4/azath_0.4.4_linux_amd64.tar.gz"
+      sha256 "5e6bfc55ecf8530e96e6333102325ccfffd7bea6a04c95404d46c53ceb135965"
       define_method(:install) do
         bin.install "azath"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/azathsh/azath/releases/download/v0.4.4/azath_0.4.3_linux_arm64.tar.gz"
-      sha256 "641a5ec04a773e94058dfdb8de85a088030b4e59bfbfb10ed2a90b069dcafdcd"
+      url "https://github.com/azathsh/azath/releases/download/v0.4.4/azath_0.4.4_linux_arm64.tar.gz"
+      sha256 "e173af78f625dcdd067731d1ae4d1a87c7ac66b9e6ee4312fc982758978086f6"
       define_method(:install) do
         bin.install "azath"
       end
