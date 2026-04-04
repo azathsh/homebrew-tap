@@ -5,23 +5,23 @@
 class Azath < Formula
   desc "🏰 Azath - Protect your secrets from leaking into git"
   homepage "https://azath.sh"
-  version "0.5.1"
+  version "0.6.0-beta.1"
   license "MIT"
 
   depends_on "git" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/azathsh/azath/releases/download/v0.5.1/azath_0.5.1_darwin_amd64.tar.gz"
-      sha256 "85d5875e490f1a0e74c993a14aef760b0256bca04feb6c6ef4b642e3524bd2aa"
+      url "https://github.com/azathsh/azath/releases/download/v0.6.0-beta.1/azath_0.6.0-beta.1_darwin_amd64.tar.gz"
+      sha256 "744b3b4fdbf219581d9741844c36609efece23beb60128c7fe1837aabe2e53b7"
 
       define_method(:install) do
         bin.install "azath"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/azathsh/azath/releases/download/v0.5.1/azath_0.5.1_darwin_arm64.tar.gz"
-      sha256 "230c9720d71b785e0c2090a4f688355bb372e0784bbe558107f8c7d342b04e6b"
+      url "https://github.com/azathsh/azath/releases/download/v0.6.0-beta.1/azath_0.6.0-beta.1_darwin_arm64.tar.gz"
+      sha256 "feb52f6facede5756184a39e2dfdcf725996405f58145c78d6beee281227e800"
 
       define_method(:install) do
         bin.install "azath"
@@ -31,15 +31,15 @@ class Azath < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/azathsh/azath/releases/download/v0.5.1/azath_0.5.1_linux_amd64.tar.gz"
-      sha256 "9501058c2c015a1b16ee210d9e01a33ed9e64720d68577c3229ac39d320d354a"
+      url "https://github.com/azathsh/azath/releases/download/v0.6.0-beta.1/azath_0.6.0-beta.1_linux_amd64.tar.gz"
+      sha256 "95bfaf4e7e1f244a4737e4aa485ad57988ef869938d1b3fa3a03f3de41aba795"
       define_method(:install) do
         bin.install "azath"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/azathsh/azath/releases/download/v0.5.1/azath_0.5.1_linux_arm64.tar.gz"
-      sha256 "e784e53b034685a268fef495ff58ac97597c3902a856bb9ff4967374f38dcffb"
+      url "https://github.com/azathsh/azath/releases/download/v0.6.0-beta.1/azath_0.6.0-beta.1_linux_arm64.tar.gz"
+      sha256 "3faf574a0be09cdae338ffc77f703e4de60894f586b372279387a5b5ccbfc122"
       define_method(:install) do
         bin.install "azath"
       end
